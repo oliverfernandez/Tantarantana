@@ -1,4 +1,4 @@
-package com.tantarantana.festival;
+package com.tantarantana.filmfestweb;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class FestivalCineTantarantanaApplicationTests {
+public class TantarantanaFilmFestWebApplicationTests {
 
 	@Test
 	public void contextLoads() {
