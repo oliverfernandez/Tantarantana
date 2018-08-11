@@ -6,11 +6,5 @@
 
     <groupId>com.tantarantana</groupId>
     <artifactId>BuildTools</artifactId>
-    <version>${tantarantana.version}</version>
-
-    <parent>
-        <groupId>com.tantarantana</groupId>
-        <artifactId>Tantarantana</artifactId>
-        <version>${tantarantana.version}</version>
-    </parent>
+    <version>1.0</version>
 </project>
