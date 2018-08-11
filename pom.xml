@@ -29,5 +29,40 @@
     <modules>
         <module>FilmFestWeb</module>
         <module>Domain</module>
+        <module>BuildTools</module>
     </modules>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.10.0</version>
+                <configuration>
+                    <rulesets>
+                        <ruleset>google-cloud-pmd.xml</ruleset>
+                    </rulesets>
+                    <printFailingErrors>true</printFailingErrors>
+                    <excludes>
+                        <exclude>**/TantarantanaFilmFestWebApplication.java</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.tantarantana</groupId>
+                        <artifactId>BuildTools</artifactId>
+                        <version>${tantarantana.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
 </project>

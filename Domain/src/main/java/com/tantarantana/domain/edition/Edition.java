@@ -1,20 +1,19 @@
 package com.tantarantana.domain.edition;
 
 import javax.persistence.*;
-import java.time.Year;
 
 @Entity
 public class Edition {
     @Id
     @Column(unique = true)
-    private Year year;
+    private Long year;
 
 
-    public Year getYear() {
+    public Long getYear() {
         return year;
     }
 
-    public void setYear(Year year) {
+    public void setYear(Long year) {
         this.year = year;
     }
 }
